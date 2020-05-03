@@ -3,5 +3,5 @@ end
 
 Then("Orders are present on the Orders tab") do
     dash = DashAndroid.new
-    dash.first_element.displayed?
+    expect(dash.first_element.displayed?).to be(true)
 end

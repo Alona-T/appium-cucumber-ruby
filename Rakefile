@@ -14,7 +14,6 @@ end
 
 task :clean do
   rm_rf "tmp"
-  rm_rf "screenshots"
   rm_rf "screenshot.png"
   rm_rf "reports"
 end
