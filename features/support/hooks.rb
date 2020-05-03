@@ -12,3 +12,13 @@ After do |scenario|
   end
   $driver.driver_quit
 end
+
+#DB connection variables if needed
+ENV['HOST'] = "myDB.local"
+ENV['USER'] = 'user'
+ENV['PASSWORD'] = "password"
+ENV['PORT'] = "8080"
+ENV['NAME'] = "name"
+
+#if you want to fetch some data from queries (use from Client.rb). Example:
+# @name = mysql_connection.query("SELECT * FROM user").first['id']
