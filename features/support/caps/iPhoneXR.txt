@@ -1,0 +1,16 @@
+[caps]
+
+platformName = "iOS"
+app = "/Users/alona/Library/Developer/Xcode/DerivedData/AlonaApp-dooznrbnbktkgefdtkspythhbsth/Build/Products/Debug-iphonesimulator/AlonaApp.app"
+platformVersion = "13.4"
+automationName = 'XCUITest'
+newCommandTimeout = 10000
+deviceName = "iPhone XR"
+useNewWDA = true
+xcodeSigningId = "iPhone Developer"
+xcodeOrgId = "57H2DTP5J7"
+
+[appium_lib]
+server_url = "http://localhost:4723/wd/hub"
+wait = 20
+newCommandTimeout = 60

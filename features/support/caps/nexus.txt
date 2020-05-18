@@ -1,0 +1,11 @@
+[caps]
+platformName = 'Android'
+deviceName = 'Nexus'
+app = '/Users/alona/Projects/appium-cucumber-ruby/TestApp.apk'
+automationName = 'UiAutomator2'
+udid = "emulator-5556"
+
+[appium_lib]
+server_url = "http://localhost:4723/wd/hub"
+wait = 20
+newCommandTimeout = 60

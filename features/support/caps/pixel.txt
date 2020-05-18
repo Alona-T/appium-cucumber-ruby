@@ -1,8 +1,9 @@
 [caps]
 platformName = 'Android'
-deviceName = ''
-app = ''
+deviceName = 'Pixel'
+app = '/Users/alona/Projects/appium-cucumber-ruby/TestApp.apk'
 automationName = 'UiAutomator2'
+udid = "emulator-5554"
 
 [appium_lib]
 server_url = "http://localhost:4723/wd/hub"
