@@ -6,6 +6,8 @@ This framework can be used by QA Engineers for testing Native Mobile apps with a
  - Appium
  - Page Object model
  - Cucumber HTML report
+ - Screenshots on failure
+ - Multi device support
 
 # How to start 
  1. Clone the project
@@ -19,5 +21,7 @@ This framework can be used by QA Engineers for testing Native Mobile apps with a
  5. For running tests you can use rake tasks - as example
     - ```rake android```for Android platform
     - ```rake ios```for iOS platform
- 
+    - ```rake android_device[Pixel]``` - to run tests on Pixel device
+    - ```rake ios_device[iPhone11]``` - to run tests on iPhone11 emulator
+  
  6. to view HTML report copy Path from reports/output.html and paste it to any browser
