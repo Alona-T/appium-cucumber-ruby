@@ -1,6 +1,8 @@
 Before do
   $driver.start_driver
   $test_data = YAML.load_file(File.dirname(__FILE__) + "/../data/test_data.yml")
+  #example of usage REST API Client
+  RestClient.post("http:yourUrl", { user: "login user", password: "password" }, {contentType: "application..."})
 end
 
 After do |scenario|
