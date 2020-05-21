@@ -1,3 +1,4 @@
 USERS:
-    PASSWORD: ''
-    UPER_ADMIN: ''
+    DRIVER:
+        EMAIL: ''
+        PASSWORD: ''

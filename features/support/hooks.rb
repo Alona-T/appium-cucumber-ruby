@@ -1,5 +1,6 @@
 Before do
   $driver.start_driver
+  $test_data = YAML.load_file(File.dirname(__FILE__) + "/../data/test_data.yml")
 end
 
 After do |scenario|
