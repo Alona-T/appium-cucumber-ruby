@@ -17,4 +17,21 @@ module Helper
     wait_for_element(elem)
     elem.click
   end
+
+  def swipe_to_top(element, direction)
+    elem = element
+    x = elem.location.x
+    y = elem.location.y
+    Appium::TouchAction.swipe(start_x: x, start_y: y, direction: direction)
+  end
+
+  def swipe_horizontally(element_s, element_e, direction)
+    element_start = element_s
+    x_start = element_start.location.x
+    y_start = element_start.location.y
+    element_end = element_e
+    x_end = element_end.location.x
+    y_end = element_end.location.y
+    Appium::TouchAction.swipe(start_x: x_end, start_y: y_end, end_x: x_start, end_y: y_start, direction: direction)
+  end
 end
