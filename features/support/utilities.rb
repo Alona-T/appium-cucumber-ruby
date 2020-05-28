@@ -1,4 +1,6 @@
+require 'appium_lib'
 module Helper
+
 
   def wait_for_element(elem, count=60)
 
@@ -33,5 +35,13 @@ module Helper
     x_end = element_end.location.x
     y_end = element_end.location.y
     Appium::TouchAction.swipe(start_x: x_end, start_y: y_end, end_x: x_start, end_y: y_start, duration: duration)
+  end
+
+  def swipe_horizontally_new(element_s)
+    dimension = element_s.size
+    x_start = element_s.location.x
+    y_start = element_s.location.y
+    element_end = dimension.width*0.2
+    Appium::TouchAction.new.press(x: x_start, y: y_start).wait(2000).move_to(x: element_end, y: y_start).release.perform
   end
 end
