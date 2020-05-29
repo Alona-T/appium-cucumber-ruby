@@ -27,7 +27,7 @@ module Helper
     Appium::TouchAction.swipe(start_x: x, start_y: y, duration: duration)
   end
 
-  def swipe_horizontally(element_s, element_e, duration)
+  def swipe_horizontally_with_start_end_elements(element_s, element_e, duration)
     element_start = element_s
     x_start = element_start.location.x
     y_start = element_start.location.y
@@ -37,11 +37,11 @@ module Helper
     Appium::TouchAction.swipe(start_x: x_end, start_y: y_end, end_x: x_start, end_y: y_start, duration: duration)
   end
 
-  def swipe_horizontally_new(element_s)
-    dimension = element_s.size
+  def swipe_horizontally_with_one_element(element_s, element_e, width)
+    dimension = element_e.size
     x_start = element_s.location.x
     y_start = element_s.location.y
-    element_end = dimension.width*0.2
+    element_end = dimension.width * width
     Appium::TouchAction.new.press(x: x_start, y: y_start).wait(2000).move_to(x: element_end, y: y_start).release.perform
   end
 end
