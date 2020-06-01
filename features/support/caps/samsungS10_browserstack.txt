@@ -1,0 +1,15 @@
+[caps]
+platformName = 'Android'
+deviceName = 'Samsung Galaxy S10e'
+os_version = '9.0'
+app = "bs://<yourapp>"
+automationName = 'UiAutomator2'
+autoGrantPermissions = true
+
+[appium_lib]
+server_url = "http://localhost:4723/wd/hub"
+wait = 20
+newCommandTimeout = 60
+
+[browserstack]
+server_url = "http://alonat1:nyjZvQzPwtkTB5ZxVUxs@hub-cloud.browserstack.com/wd/hub"
