@@ -12,4 +12,4 @@ wait = 20
 newCommandTimeout = 60
 
 [browserstack]
-server_url = "http://alonat1:nyjZvQzPwtkTB5ZxVUxs@hub-cloud.browserstack.com/wd/hub"
+server_url = "http://***:***@hub-cloud.browserstack.com/wd/hub"
