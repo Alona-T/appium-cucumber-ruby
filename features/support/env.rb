@@ -57,7 +57,7 @@ when 'BROWSERSTACK'
           caps['device'] = 'Samsung Galaxy S10e'
           caps['platformName'] = 'android'
           caps['browserstack.debug'] = true
-          caps['app'] = 'bs://53a8f7dbb50924d160f69c03d984465272252d2a'
+          caps['app'] = 'bs://***'
           caps['autoGrantPermissions'] = true
 
           appium_driver = Appium::Driver.new({
@@ -73,7 +73,7 @@ when 'BROWSERSTACK'
         caps['device'] = 'Google Pixel 3'
         caps['platformName'] = 'android'
         caps['browserstack.debug'] = true
-        caps['app'] = 'bs://53a8f7dbb50924d160f69c03d984465272252d2a'
+        caps['app'] = 'bs://***'
         caps['autoGrantPermissions'] = true
 
         appium_driver = Appium::Driver.new({
